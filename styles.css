@@ -128,6 +128,7 @@ header {
     background-color: #2CCCC4;
     width: 100%;
     height: 92px;
+    border-radius: 10px;
 }
 #form_input_1 {
     width: 966px;
@@ -153,6 +154,7 @@ header {
     width: 90%;
     width: calc(482px + (900 - 482)*((100vw - 600px) / (1920 - 600)));
     min-width: 482px;
+    border-radius: 10px;
 }
 #f_btn {
     height: 47px;
@@ -238,7 +240,7 @@ header {
     background-color: #2CCCC4;
 }
 #info_h2 {
-    width: 60%;
+    width: 80%;
     margin: 0 auto;
     margin-top: 59px;
 }
@@ -367,34 +369,64 @@ footer {
 .slider {
     width: 100%;
     height: 550px;
-    font-size: 15px;
     align-items: center;
     margin: 0;
 }
-.swiper-slide {
+.slider_prof {
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+.slide {
     text-align: center;
-    font-size: 7rem;
     display: inline-block;
     justify-content: center;
     align-items: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 30px 100px;
     height: 500px;
     border-radius: 10px;
     background: rgb(255,255,255);
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(230,242,251,1) 71%);
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
-.swiper-button-next, .swiper-rtl .swiper-button-prev {
+.slide_2 {
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    vertical-align: middle;
+    box-sizing: border-box;
+    height: 230px;
+    border-radius: 10px;
+}
+.blue_grad {
+    background: -webkit-linear-gradient(-90deg,#00bfbf,white);
+}
+.purple_grad {
+    background: -webkit-linear-gradient(-90deg,#8955e7,white);
+}
+.button-next_1, .swiper-rtl .button-prev_1 {
     right: 50px !important;
     left: auto;
     color: #2CCCC4;
 }
-.swiper-button-prev, .swiper-rtl .swiper-button-next {
+.button-prev_1, .swiper-rtl .button-next_1 {
     left: 50px !important;
     right: auto;
     color: #2CCCC4;
 }
-.swiper-pagination {
-    color: #2CCCC4;
+.button-next_2, .swiper-rtl .button-prev_2 {
+    right: 20px !important;
+    left: auto;
+    color: #450C67;
+}
+.button-prev_2, .swiper-rtl .button-next_2 {
+    left: 20px !important;
+    right: auto;
+    color: #450C67;
 }
 #swaper_h2 {
     width: 60%;
@@ -402,18 +434,10 @@ footer {
     margin-top: 59px;
     margin-bottom: 59px;
 }
-#one {
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 60px 30px;
-}
 .title_reviews {
     font-size: 48px;
     font-size: calc(24px + (48 - 24)*((100vw - 433px) / (1920 - 433)));
-    margin: calc(10px + (20 - 10)*((100vw - 433px) / (1920 - 433))) 0;
+    margin: calc(10px + (15 - 10)*((100vw - 433px) / (1920 - 433))) 0;
     text-align: center;
 }
 .text_reviews {
@@ -421,4 +445,15 @@ footer {
     font-size: calc(16px + (24 - 16)*((100vw - 433px) / (1920 - 433)));
     font-weight: 400;
     line-height: 1.5;
+    margin: calc(10px + (15 - 10)*((100vw - 433px) / (1920 - 433))) 0;
+    
+}
+.sphere_logo {
+    height: 150px;
+    height: calc(100px + (150 - 100)*((100vw - 433px) / (1920 - 433)));
+    width: 150px;
+    width: calc(100px + (150 - 100)*((100vw - 433px) / (1920 - 433)));
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #2cccc4;
 }
